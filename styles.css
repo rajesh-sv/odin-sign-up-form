@@ -141,9 +141,10 @@ html {
 
 body {
   max-width: 2000px;
-  height: 100vh;
-  background-color: #eee;
+  min-height: 100vh;
+  background-color: #f9fafb;
   font-family: Roboto, system-ui, sans-serif;
+  display: flex;
 }
 
 :root {
@@ -153,11 +154,6 @@ body {
   --input-focus-color: #293ec4;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
 
 .hero-container {
   background-image: url("./images/background-image.jpg");
@@ -202,6 +198,101 @@ a {
 	text-decoration: underline;
 }
 
-.form-container {
-	
+.intro-to-service {
+	margin-top: 120px;
+	margin-right: 150px;
+}
+
+.intro-to-service,
+.sign-up-now,
+.already-have-an-account,
+.create-account {
+	margin-left: 40px;
+}
+
+form {
+	background-color: #FFF;
+	padding-left: 40px;
+	margin-bottom: 30px;
+	box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.form-inputs {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 80px;
+	row-gap: 20px;
+	padding-right: 40px;
+}
+
+.form-inputs > p {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+em {
+	font-style: italic;
+}
+
+.intro-to-service,
+.sign-up-now,
+.form-header {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.create-account {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #FFF;
+	background-color: var(--green-shade-color);
+	padding: 10px 40px;
+	border: none;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+}
+
+.log-in {
+	color: var(--green-shade-color);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+label {
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: #3d3d3d;
+	margin-bottom: 2px;
+	letter-spacing: 0.1rem;
+}
+
+input {
+	color: #3d3d3d;
+	padding: 5px;
+	border: 1px solid var(--input-border-color);
+	border-radius: 0.3em;
+	background-color: #f9fafb;
+	width: 300px;
+	font-size: 0.9rem;
+}
+
+input:focus {
+	box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+	outline: none;
+	border: 1.5px solid var(--input-focus-color);
+}
+
+.invalid {
+	border: 1.5px solid var(--input-invalid-color);
+}
+
+.no-match::after {
+	content: "* Passwords do not match";
+	color: var(--input-invalid-color);
+	font-size: 0.7rem;
 }

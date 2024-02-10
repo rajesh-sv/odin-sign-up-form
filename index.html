@@ -9,7 +9,6 @@
   </head>
 
   <body>
-    <div class="container">
       <div class="hero-container">
         <div class="hero">
           <img
@@ -38,29 +37,44 @@
           this in you life to help you realize you dreams.
         </p>
         <p class="sign-up-now">Sign up <em>now</em> to get started.</p>
-        <form action="#" method="post">
-          <p>Let's do this!</p>
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" name="first-name" id="first-name" />
-          <label for="last-name">LAST NAME</label>
-          <input type="text" name="last-name" id="last-name" />
-          <label for="email-id">EMAIL</label>
-          <input type="email" name="email-id" id="email" />
-          <label for="phone-number">PHONE NUMBER</label>
-          <input type="tel" name="phone-number" id="phone-number" />
-          <label for="password">PASSWORD</label>
-          <input type="password" name="password" id="password" />
-          <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input
-            type="password"
-            name="confirm-password"
-            id="confirm-password"
-          />
+        <form action="#" method="post" id="account-creation-form">
+          <p class="form-header">Let's do this!</p>
+          <div class="form-inputs">
+            <p>
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" />
+            </p>
+            <p>
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" id="last-name" />
+            </p>
+            <p>
+              <label for="email-id">EMAIL</label>
+              <input type="email" name="email-id" id="email" />
+            </p>
+            <p>
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" name="phone-number" id="phone-number" />
+            </p>
+            <p>
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" />
+              <span id="no-match-message"></span>
+            </p>
+            <p>
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+              />
+            </p>
+          </div>
         </form>
+        <button type="button" form="account-creation-form" class="create-account">Create Account</button>
         <p class="already-have-an-account">
           Aldready have an account? <a href="#" class="log-in">Log in</a>
         </p>
       </div>
-    </div>
   </body>
 </html>
