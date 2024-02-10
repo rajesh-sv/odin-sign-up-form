@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
-</head>
-<body>
-        
-</body>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="hero-container">
+        <div class="hero">
+          <img
+            src="./images/odin-lined.png"
+            alt="Odin Logo. Old man with a long white beard and an eye patch in the left eye."
+            class="hero-logo"
+          />
+          <p class="hero-text">ODIN</p>
+        </div>
+        <div class="footer">
+          Photo by
+          <a
+            href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Halie West</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </div>
+      </div>
+      <div class="form-container">
+        <p class="intro-to-service">
+          This is not a real online service! You know you need something like
+          this in you life to help you realize you dreams.
+        </p>
+        <p class="sign-up-now">Sign up <em>now</em> to get started.</p>
+        <form action="#" method="post">
+          <p>Let's do this!</p>
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" name="first-name" id="first-name" />
+          <label for="last-name">LAST NAME</label>
+          <input type="text" name="last-name" id="last-name" />
+          <label for="email-id">EMAIL</label>
+          <input type="email" name="email-id" id="email" />
+          <label for="phone-number">PHONE NUMBER</label>
+          <input type="tel" name="phone-number" id="phone-number" />
+          <label for="password">PASSWORD</label>
+          <input type="password" name="password" id="password" />
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+          />
+        </form>
+        <p class="already-have-an-account">
+          Aldready have an account? <a href="#" class="log-in">Log in</a>
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
